@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <script src="./script.js"></script>
+
+    <div class="calculator">
+      <input type="text" id="display" readonly>
+      <div class="keys">
+        <button onclick="symbol('7')">7</button>
+        <button onclick="symbol('8')">8</button>
+        <button onclick="symbol('9')">9</button>
+        <button onclick="symbol('/')">/</button>
+        <button onclick="symbol('4')">4</button>
+        <button onclick="symbol('5')">5</button>
+        <button onclick="symbol('6')">6</button>
+        <button onclick="symbol('*')">*</button>
+        <button onclick="symbol('1')">1</button>
+        <button onclick="symbol('2')">2</button>
+        <button onclick="symbol('3')">3</button>
+        <button onclick="symbol('-')">-</button>
+        <button onclick="symbol('0')">0</button>
+        <button onclick="symbol('.')">.</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="symbol('+')">+</button>
+        <button onclick="Equality()">=</button>
+      </div>
+    </div>
+
+
+    <div>
+      <div class="container">
+        <h1>გამოცანი ციფრი!</h1>
+        <p>შეიყვანეთ ციფრი 1-10</p>
+        <input type="text" id="guessInput">
+        <button onclick="checkGuess()">გაგზავნა</button>
+        <p id="message"></p>
+        <p>დარჩენილია<span id="attempts"> 10</span></p>
+    </div>
+    </div>
+
+    
+    <h1>იქსიკი და ნოლიკი</h1>
+    <div class="game">
+      <div class="cell" onclick="cellClicked(0)"></div>
+      <div class="cell" onclick="cellClicked(1)"></div>
+      <div class="cell" onclick="cellClicked(2)"></div>
+      <div class="cell" onclick="cellClicked(3)"></div>
+      <div class="cell" onclick="cellClicked(4)"></div>
+      <div class="cell" onclick="cellClicked(5)"></div>
+      <div class="cell" onclick="cellClicked(6)"></div>
+      <div class="cell" onclick="cellClicked(7)"></div>
+      <div class="cell" onclick="cellClicked(8)"></div>
+  </div>
+  <div class="message-game" id="message-game"></div>
+
+    
+  </body>
+</html>
